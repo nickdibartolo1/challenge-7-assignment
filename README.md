@@ -1,31 +1,32 @@
-
-<h1>no</h1>
+## Title
+ReadMe Generator
 
 ## Description
-no
+This project was created for the intentions of generating a fast and standardized ReadMe.
 ## Table of Contents
+- [Title](#title)
 - [Description](#description)
-- [Motivation](#motivation)
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Contributors](#contributors)
+- [License [Badge]](#license-badge)
+- [Contributing](#contributing)
 - [Tests](#tests)
-- [GitHub](#githubUsername)
+- [GitHub](#github)
 - [Email](#email)
 ## Installation
-no
+Activating the node in your terminal and answering the questions provided.
 ## Usage
-no
-## License
-![badge](https://img.shields.io/badge/license-no-brightgreen)
+The use case is for any project that needs a ReadMe document.
+## License [Badge]
+(https://img.shields.io/badge/license-none-red)
 <br />
-no is the license applied for this application. 
+None is the license applied for this application. 
 ## Contributing
-undefined
+Nick DiBartolo
 ## Tests
-no
+No Tests
 ## GitHub
-Provided here (no) is the creators GitHub.
+Provided here (Nickdibartolo1) is the creators GitHub.
 ## Email
-Provided here (undefined) is the creators Email.
+Provided here (Dibartolonick0518@gmail.com) is the creators Email.

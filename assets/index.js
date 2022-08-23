@@ -5,7 +5,7 @@ const createREADME = require("./generateREADME");
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFileSync('README.md', fileName)
+    return fs.writeFileSync(fileName, data)
 }
 
 // TODO: Create an array of questions for user input
@@ -72,9 +72,10 @@ function questionUser() {
 function init() {
     questionUser()
         .then((data) => {
-            const fileName = createREADME(data)
-            writeToFile(fileName, data)
-                .then(() => console.log('Successfully created README.md'))
+            const fileText = createREADME(data)
+            // console.log(fileText);
+            writeToFile("NicksReadme.md",fileText)
+            console.log('Successfully created README.md');
 
         })
         .catch((err) => 

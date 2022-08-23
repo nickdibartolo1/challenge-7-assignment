@@ -18,8 +18,8 @@ ${answers.description}
 ${answers.installation}
 ## Usage
 ${answers.usage}
-## License
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+## License [Badge]
+(https://img.shields.io/badge/license-${answers.license}-red)
 <br />
 ${answers.license} is the license applied for this application. 
 ## Contributing
