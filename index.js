@@ -1,9 +1,15 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const createREADME = require("./generateREADME");
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFileSync('README.md', fileName)
+}
 
 // TODO: Create an array of questions for user input
-const questionUser = () => {
+function questionUser() {
     return inquirer.prompt([
         {
             type: 'input',
@@ -34,6 +40,7 @@ const questionUser = () => {
             type: 'input',
             name: "license",
             message: "What license, if any, do you have for this project?",
+            choices: ["MIT", "Apache", "Other"]
         },
         {
             type: 'input',
@@ -58,15 +65,21 @@ const questionUser = () => {
     ])
 };
 
-questionUser();
-    
-
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    questionUser()
+        .then((data) => {
+            const fileName = createREADME(data)
+            writeToFile(fileName, data)
+                .then(() => console.log('Successfully created README.md'))
+
+        })
+        .catch((err) => 
+            console.error(err))
+}
 
 // Function call to initialize app
 init();
